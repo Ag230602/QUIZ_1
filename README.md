@@ -6,8 +6,8 @@ This repository implements a controlled Stable Diffusion pipeline that maps stru
 
 ## Final Links (Fill Before Submission)
 
-- GitHub Repository URL: **[PASTE_GITHUB_LINK_HERE]**
-- Demo Video URL (1–2 min): **[PASTE_VIDEO_LINK_HERE]**
+- GitHub Repository URL: **[https://github.com/Ag230602/QUIZ_1]**
+- Demo Video URL (1–2 min): **[https://youtu.be/-A7iRCGIlCc]**
 
 ---
 
