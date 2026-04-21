@@ -168,6 +168,16 @@ Primary result artifacts:
 
 ---
 
+## Multimodal Extension: Actual Run Artifacts
+
+Executed demo artifacts are available here:
+- `results/multimodal_demo_results.md`
+- `results/auto_captions.csv` (image-to-text captions)
+- `sample_outputs/text_to_image_demo_placeholder.png` (text/speech-to-image demo output)
+- `sample_outputs/image_to_video_demo.gif` (image-to-video demo output)
+
+---
+
 ## AI Tools Disclosure
 
 See `docs/ai_tool_disclosure.md` for:

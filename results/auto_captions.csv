@@ -1,0 +1,5 @@
+image_path,caption
+sample_outputs/P001_baseline_front.png,Question: What is this product? Answer: This product is a product
+sample_outputs/P001_structured_front.png,Question: What is this product? Answer: This product is a product
+sample_outputs/P001_structured_three_quarter.png,Question: What is this product? Answer: This product is a product
+sample_outputs/P003_baseline_front.png,Question: What is this product? Answer: This product is a product
