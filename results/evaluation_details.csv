@@ -1,0 +1,13 @@
+system,product_id,target_view,image_path,prompt_alignment,quality_raw,quality_proxy
+baseline,P001,front,outputs/baseline/P001/front_placeholder.png,0.541953057050705,4.1813713825755885,0.5892831087112427
+baseline,P001,three_quarter,outputs/baseline/P001/three_quarter_placeholder.png,0.1203145980834961,4.166267552039285,0.20623518526554108
+baseline,P002,front,outputs/baseline/P002/front_placeholder.png,,4.158135256326538,0.0
+baseline,P002,side,outputs/baseline/P002/side_placeholder.png,0.8636598289012909,4.180863997824928,0.5764160752296448
+baseline,P003,front,outputs/baseline/P003/front_placeholder.png,0.46922898292541504,4.179054253445845,0.530522882938385
+baseline,P003,three_quarter,outputs/baseline/P003/three_quarter_placeholder.png,0.46930211782455444,4.197566037152177,1.0
+structured,P001,front,outputs/structured/P001/front_placeholder.png,0.5035136640071869,4.442762956325767,1.0
+structured,P001,three_quarter,outputs/structured/P001/three_quarter_placeholder.png,0.5035116672515869,4.442594087170382,0.9741057753562927
+structured,P002,front,outputs/structured/P002/front_placeholder.png,0.6808141767978668,4.436244099131808,0.0
+structured,P002,side,outputs/structured/P002/side_placeholder.png,0.6808165013790131,4.43690128838238,0.10079731047153473
+structured,P003,front,outputs/structured/P003/front_placeholder.png,0.4994726777076721,4.4395155302963545,0.5018652677536011
+structured,P003,three_quarter,outputs/structured/P003/three_quarter_placeholder.png,0.4994726777076721,4.4395155302963545,0.5018652677536011

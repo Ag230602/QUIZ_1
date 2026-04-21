@@ -1,0 +1,11 @@
+system,product_id,target_view,image_path,prompt_alignment,quality_proxy,failure_score,failure_reason
+baseline,P001,three_quarter,outputs/baseline/P001/three_quarter_placeholder.png,0.1203145980834961,0.20623518526554108,0.8539092257618903,Low prompt alignment (image does not match metadata prompt well)
+baseline,P002,front,outputs/baseline/P002/front_placeholder.png,,0.0,0.6288689122958616,Low prompt alignment (image does not match metadata prompt well)
+structured,P002,front,outputs/structured/P002/front_placeholder.png,0.6808141767978668,0.0,0.5234300762414932,Low quality proxy (weak sharpness/contrast)
+baseline,P003,front,outputs/baseline/P003/front_placeholder.png,0.46922898292541504,0.530522882938385,0.5123828470706939,Potential consistency/diversity trade-off case
+structured,P003,front,outputs/structured/P003/front_placeholder.png,0.4994726777076721,0.5018652677536011,0.49980954527854915,Potential consistency/diversity trade-off case
+structured,P003,three_quarter,outputs/structured/P003/three_quarter_placeholder.png,0.4994726777076721,0.5018652677536011,0.49980954527854915,Potential consistency/diversity trade-off case
+structured,P002,side,outputs/structured/P002/side_placeholder.png,0.6808165013790131,0.10079731047153473,0.4931892558932304,Low quality proxy (weak sharpness/contrast)
+baseline,P001,front,outputs/baseline/P001/front_placeholder.png,0.541953057050705,0.5892831087112427,0.4438479274511337,Potential consistency/diversity trade-off case
+baseline,P003,three_quarter,outputs/baseline/P003/three_quarter_placeholder.png,0.46930211782455444,1.0,0.37148851752281187,Potential consistency/diversity trade-off case
+structured,P001,three_quarter,outputs/structured/P001/three_quarter_placeholder.png,0.5035116672515869,0.9741057753562927,0.35531010031700133,Potential consistency/diversity trade-off case

@@ -1,0 +1,7 @@
+product_id,title,category,color,material,style,attributes,target_view,environment,baseline_prompt
+P001,Insulated Water Bottle,drinkware,matte black,stainless steel,minimalist,"750ml, leak-proof lid, vacuum insulated, outdoor lifestyle",front,"studio white background","A black water bottle on a white background"
+P001,Insulated Water Bottle,drinkware,matte black,stainless steel,minimalist,"750ml, leak-proof lid, vacuum insulated, outdoor lifestyle",three_quarter,"studio white background","A black water bottle product photo"
+P002,Ceramic Coffee Mug,drinkware,cream,ceramic,scandinavian,"350ml, curved handle, matte glaze, home kitchen",front,"studio beige background","A ceramic mug product image"
+P002,Ceramic Coffee Mug,drinkware,cream,ceramic,scandinavian,"350ml, curved handle, matte glaze, home kitchen",side,"studio beige background","A cream coffee mug on a plain background"
+P003,Wireless Over-Ear Headphones,electronics,midnight blue,aluminum and memory foam,premium,"noise canceling, foldable, cushioned ear cups, travel",front,"studio gray background","A pair of blue headphones product photo"
+P003,Wireless Over-Ear Headphones,electronics,midnight blue,aluminum and memory foam,premium,"noise canceling, foldable, cushioned ear cups, travel",three_quarter,"studio gray background","Blue over-ear headphones on a simple background"

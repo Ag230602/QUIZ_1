@@ -1,0 +1,31 @@
+model:
+  model_id: stabilityai/stable-diffusion-xl-base-1.0
+  torch_dtype: float16
+  use_safetensors: true
+  device: cuda
+  enable_cpu_offload: true
+
+generation:
+  image_width: 1024
+  image_height: 1024
+  guidance_scale: 7.5
+  num_inference_steps: 30
+  num_images_per_prompt: 3
+  seed: 42
+  scheduler: default
+  output_root: outputs
+
+control:
+  use_negative_prompt: true
+  negative_prompt: "low quality, blurry, distorted, deformed, cropped, extra objects, extra lid, duplicate product, text, watermark, logo, busy background, clutter, human hands, broken geometry"
+  use_controlnet: false
+  controlnet_model_id: lllyasviel/sd-controlnet-canny
+
+data:
+  metadata_csv: data/sample_products.csv
+
+prompting:
+  studio_background: "clean white seamless studio background"
+  lighting: "soft professional product lighting"
+  lens: "85mm product photography"
+  composition: "centered composition, catalog-ready, realistic, high detail"

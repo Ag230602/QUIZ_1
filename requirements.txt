@@ -1,0 +1,32 @@
+torch>=2.1.0
+diffusers>=0.30.0
+transformers>=4.44.0
+accelerate>=0.34.0
+safetensors>=0.4.4
+pandas>=2.2.2
+Pillow>=10.4.0
+numpy>=1.26.4
+pyyaml>=6.0.2
+tqdm>=4.66.5
+scikit-learn>=1.5.1
+imagehash>=4.3.1
+open-clip-torch>=2.26.1
+matplotlib>=3.9.2
+
+# ── Multimodal extensions ──────────────────────────────────────────────────
+
+# Image → Text  (BLIP-2 captioning — transformers already listed above)
+# No extra packages needed; BLIP-2 ships inside 🤗 transformers.
+# Optional OCR:
+#   pip install pytesseract
+#   brew install tesseract   # macOS
+#   sudo apt install tesseract-ocr  # Ubuntu
+
+# Image → Video  (Stable Video Diffusion)
+# SVD ships inside diffusers>=0.25 — already listed above.
+imageio>=2.34.0          # frame assembly
+imageio[ffmpeg]>=2.34.0  # MP4 export (installs ffmpeg bindings)
+
+# Speech → Image  (OpenAI Whisper ASR)
+openai-whisper>=20231117  # Whisper speech-to-text
+soundfile>=0.12.1         # audio file I/O helper

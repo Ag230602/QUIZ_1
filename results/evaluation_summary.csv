@@ -1,0 +1,4 @@
+system,num_images,prompt_alignment,consistency,diversity,quality_proxy,mean_phash_distance,clip_available,alignment_mode,consistency_mode
+baseline,6.0,0.4928917169570923,0.9999999602635702,0.033935546875,0.4837428753574689,0.032373046875,False,color_fallback,histogram_fallback
+structured,6.0,0.561266894141833,1.0000000198682149,0.0013020833333333333,0.5131056035558382,0.0353515625,False,color_fallback,histogram_fallback
+delta_structured_minus_baseline,0.0,0.06837517718474068,5.960464466436832e-08,-0.032633463541666664,0.029362728198369326,0.002978515625000004,False,,
