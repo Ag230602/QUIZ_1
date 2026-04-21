@@ -1,13 +1,13 @@
 # Controlled Stable Diffusion for E-Commerce Product Image Generation
 
-Submission project for **Option 1: E-Commerce Product Image Generation**.
+Final submission for **Option 1: E-Commerce Product Image Generation**.
 
 This repository implements a controlled Stable Diffusion pipeline that maps structured product metadata to prompts, compares baseline vs improved prompting, and evaluates outputs with required metrics and failure analysis.
 
-## Final Links (Fill Before Submission)
+## Final Links
 
-- GitHub Repository URL: **[https://github.com/Ag230602/QUIZ_1]**
-- Demo Video URL (1–2 min): **[https://youtu.be/-A7iRCGIlCc]**
+- GitHub Repository URL: **https://github.com/Ag230602/QUIZ_1**
+- Demo Video URL (1–2 min): **https://youtu.be/-A7iRCGIlCc**
 
 ---
 
@@ -38,7 +38,7 @@ This moves the project from “image generation demo” to an auditable system w
 | Failure cases and analysis | ✅ | `results/failure_cases.csv` |
 | PPT (10+ slides) | ✅ | `slides/Stable_Diffusion_Ecommerce_Starter.pptx` |
 | AI tools disclosure | ✅ | `docs/ai_tool_disclosure.md` |
-| Demo video | ⏳ | `docs/demo_video_script.md` + link placeholder above |
+| Demo video | ✅ | `docs/demo_video_script.md` + final video link in this README |
 | Bonus multimodal extension | ✅ | `src/multimodal_pipeline.py`, `src/speech_to_image.py`, `src/image_to_text.py`, `src/image_to_video.py` |
 
 ---
@@ -138,6 +138,40 @@ python src/multimodal_pipeline.py full-chain --text "premium matte black water b
 
 ---
 
+## Methodology (All-in-One Summary)
+
+### 1) Problem Setup
+Given structured product metadata (`title`, `category`, `color`, `material`, `style`, `attributes`, `target_view`, `environment`), generate e-commerce product images suitable for catalog use.
+
+### 2) Baseline System
+Use short naive prompts from metadata (`baseline_prompt` in CSV).
+
+### 3) Improved System
+Use structured prompt templates + negative prompts:
+- structured prompt generated in `src/prompt_builder.py`
+- negative prompt configured in `configs/default.yaml`
+
+### 4) Control Strategy
+Required control is implemented through:
+- structured prompt templates
+- negative prompt suppression
+
+Optional extension hooks for conditioning are retained in config (`use_controlnet`, model id).
+
+### 5) Evaluation Strategy
+Evaluate baseline vs structured with four dimensions:
+- prompt alignment
+- consistency
+- diversity
+- quality proxy (+ qualitative rubric template)
+
+### 6) Analysis Requirement Coverage
+Includes both successful and failure examples:
+- detailed per-image evaluation
+- failure case extraction and analysis file
+
+---
+
 ## Evaluation Design
 
 Required dimensions implemented:
@@ -152,6 +186,33 @@ Primary result artifacts:
 - `results/failure_cases.csv`
 - `results/qualitative_review_template.csv`
 - `results/baseline_vs_structured.png`
+
+## Key Quantitative Results
+
+From `results/evaluation_summary.csv`:
+
+| System | Prompt Alignment | Consistency | Diversity | Quality Proxy |
+|---|---:|---:|---:|---:|
+| Baseline | 0.4929 | 1.0000 | 0.0339 | 0.4837 |
+| Structured | 0.5613 | 1.0000 | 0.0013 | 0.5131 |
+| Delta (Structured - Baseline) | +0.0684 | +0.0000 | -0.0326 | +0.0294 |
+
+Interpretation:
+- Structured prompting improved alignment and quality.
+- Consistency stayed high in both settings.
+- Diversity dropped under stronger control, showing the expected control/diversity trade-off.
+
+---
+
+## Failure Cases and Insights
+
+Failure analysis is documented in `results/failure_cases.csv`.
+Common issues observed:
+- metadata mismatch on some examples
+- weak sharpness/contrast in lower-quality cases
+- reduced variation under stronger control
+
+These findings are consistent with diffusion trade-offs between strict control and output diversity.
 
 ---
 
@@ -176,6 +237,11 @@ Executed demo artifacts are available here:
 - `sample_outputs/text_to_image_demo_placeholder.png` (text/speech-to-image demo output)
 - `sample_outputs/image_to_video_demo.gif` (image-to-video demo output)
 
+This demonstrates bonus multimodal support:
+- image → text captioning
+- text/speech → image generation flow
+- image → video conversion demo
+
 ---
 
 ## AI Tools Disclosure
@@ -197,8 +263,8 @@ See `docs/ai_tool_disclosure.md` for:
 - [x] Failure cases documented
 - [x] PPT package prepared (10+ slides)
 - [x] AI tools disclosure included
-- [ ] Demo video uploaded and link added
-- [ ] GitHub and video links filled at top of README
+- [x] Demo video uploaded and link added
+- [x] GitHub and video links filled at top of README
 
 For detailed handoff notes, see `docs/ultimate_submission_package.md` and `docs/final_readiness_checklist.md`.
 
